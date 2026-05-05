@@ -187,7 +187,7 @@ INSERT INTO Gate (gate_code, terminal_name, IATA) VALUES
 ('C2', 'Terminal B', 'JFK'), 
 ('C3', 'Terminal B', 'JFK');
 
--- Update at least 6 existing flights to assign them an airline and a gate. Use UPDATE statements for this — do not re-insert the flights
+-- Update at least 6 existing flights to assign them an airline and a gate. Use UPDATE statements for this â€” do not re-insert the flights
 UPDATE flights SET airline_IATA = 'BA', gate_ID = 6 WHERE flights_ID = 1;
 UPDATE flights SET airline_IATA = 'LH', gate_ID = 3 WHERE flights_ID = 2;
 UPDATE flights SET airline_IATA = 'EK', gate_ID = 1 WHERE flights_ID = 3;
@@ -383,7 +383,7 @@ FROM flights f
 JOIN booking b ON f.flights_ID = b.flights_ID
 GROUP BY f.flight_number
 HAVING COUNT(b.booking_ID) > 1;
--- Show the full details of all bookings — passenger name, flight number, origin airport, destination airport, class, and price paid
+-- Show the full details of all bookings â€” passenger name, flight number, origin airport, destination airport, class, and price paid
 SELECT p.names AS Passenger_Name, 
        f.flight_number, 
        a1.names AS Origin, 
