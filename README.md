@@ -1,0 +1,1 @@
+This project extends the original SkyTrack Airline System database by applying Change Request CR-001. The update introduces new tables, relationships, and schema modifications while preserving existing data integrity across the ERD, logical mapping, and SQL implementation.
